@@ -1,5 +1,6 @@
 import utils
 
+
 def first(inp):
     groups = inp.split('\n\n')
     total_count = 0
@@ -11,6 +12,7 @@ def first(inp):
         count = sum(questions)
         total_count += count
     print(total_count)
+
 
 def second(inp):
     groups = inp.split('\n\n')
@@ -25,6 +27,7 @@ def second(inp):
         count = sum([1 for question in questions if question == n_persons])
         total_count += count
     print(total_count)
+
 
 inp = utils.get_raw_input(6)
 first(inp)
